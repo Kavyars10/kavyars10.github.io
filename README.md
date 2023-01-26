@@ -1,1 +1,1 @@
-# https://github.com/Kavyars10/kavyars10.github.io.git
+# https://kavyars10.github.io/
