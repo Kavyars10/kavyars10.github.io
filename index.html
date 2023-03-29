@@ -36,7 +36,22 @@ testing.............
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQJ3978" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+<script>
 
+window.addEventListener("ucEvent", function (e) {    
+    if( e.detail && e.detail.event == "consent_status") {
+        // check for consent status of service "Google Ads Remarketing"
+        if(e.detail['Google Ads Remarketing'] === true) {
+          console.log('Google Ads Remarketing has consent');
+        }
+        else {
+          console.log('Google Ads Remarketing has no consent');
+        }
+    }
+});
+
+
+</script>
 
     <h1>Usercentrics CMP V2 Test Page</h1>
     <img src="https://usercentrics.com/wp-content/uploads/2020/04/190208-UCS-Logo-800px.png" alt="uc-logo">
