@@ -41,11 +41,11 @@ testing.............
 window.addEventListener("ucEvent", function (e) {    
     if( e.detail && e.detail.event == "consent_status") {
         // check for consent status of service "Google Ads Remarketing"
-        if(e.detail['Google Ads Remarketing'] === true) {
-          console.log('Google Ads Remarketing has consent');
+        if(e.detail['Facebook Pixel'] === true) {
+          console.log('Facebook Pixel has consent');
         }
         else {
-          console.log('Google Ads Remarketing has no consent');
+          console.log('Facebook Pixel has no consent');
         }
     }
 });
